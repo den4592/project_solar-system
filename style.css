@@ -2,8 +2,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: url("./img/space-background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -14,10 +22,12 @@ h1 {
 }
 
 .container {
+  overflow: hidden;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
+  margin: 0 auto;
 }
 
 form {
