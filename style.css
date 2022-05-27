@@ -2,15 +2,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: rgb(38, 38, 45);
+  background: url("./img/space-background.jpg");
 }
 
 h1 {
   color: #fff;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 1rem;
 }
 
@@ -52,12 +51,40 @@ select {
 .required-alert-box {
   margin: 0 auto;
   padding: 50px;
-  background-color: black;
-  opacity: 0.5;
+
+  background: rgba(56, 255, 255, 0.1);
   color: #fff;
   text-align: center;
 }
 
 .required-alert-box p {
   font-size: 2rem;
+}
+
+.required__text {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+  form {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 35rem;
+  }
+  input[type="text"] {
+    margin-bottom: 0;
+    padding: 0.7rem;
+    width: 12rem;
+  }
+
+  select {
+    width: 12rem;
+    margin-bottom: 0;
+    padding: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.75rem;
+  }
 }

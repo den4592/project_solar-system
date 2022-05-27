@@ -11,15 +11,21 @@
 
 <body>
     <section class="section-first">
-
         <div class="container">
             <h1>Calculate a weight of an object on a planet</h1>
             <form>
                 <input type="text" placeholder="Mass in Kilograms">
                 <select name="planet" id="planet">
                     <option value="">--select-planet--</option>
+                    <option value="mercury">Mercury</option>
+                    <option value="venus">Venus</option>
                     <option value="earth">Earth</option>
+                    <option value="moon">Moon</option>
                     <option value="mars">Mars</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="saturn">Saturn</option>
+                    <option value="uranus">Uranus</option>
+                    <option value="neptune">Neptune</option>
                 </select>
                 <button type='button' class="btn">Calculate Weight</button>
             </form>
@@ -34,41 +40,7 @@
         </div>
     </section>
 
-
-    <script>
-        const btn = document.querySelector('button')
-        const inputValue = document.querySelector('input')
-        const planet = document.querySelector('#planet')
-        let result = 0
-
-        function setValue(result, a) { //82 innerHTML    
-            let requiredAlertBox = document.querySelector('.required-alert-box')
-            let requiredText = document.querySelector('.required__text')
-            let img = document.createElement('img')
-            requiredText.innerHTML = ''
-            if (document.querySelector('.required-alert-box>img') !== null) {
-                requiredAlertBox.childNodes[3].remove()
-            }
-
-            img.src = `./img/${a}.png`
-            img.style.width = '5rem';
-            img.style.backgroundColor = 'white';
-            requiredAlertBox.appendChild(img)
-            requiredText.innerHTML = `Your weight on the planet - ${a} : ` + result
-            return
-        }
-
-        btn.addEventListener('click', (e) => {
-            if (planet.value == 'earth') {
-                result = inputValue.value * 1.0
-                setValue(result, 'earth')
-            }
-            else if (planet.value == 'mars') {
-                result = inputValue.value * 0.38
-                setValue(result, 'mars')
-            }
-        })
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
