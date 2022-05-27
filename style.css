@@ -5,15 +5,10 @@
 html,
 body {
   width: 100%;
-  min-height: 500px;
-  position: relative;
   overflow-x: hidden;
 }
-
 body {
-  background: url("./img/space-background.jpg");
-  background-repeat: repeat;
-  background-size: cover;
+  background-color: black;
 }
 
 h1 {
