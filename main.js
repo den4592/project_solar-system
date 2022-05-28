@@ -5,9 +5,9 @@ const SURFACE_GRAVITY = 9.80665;
 let result = 0;
 
 function setValue(result, a) {
-  let requiredAlertBox = document.querySelector(".required-alert-box");
-  let requiredText = document.querySelector(".required__text");
-  let img = document.createElement("img");
+  const requiredAlertBox = document.querySelector(".required-alert-box");
+  const requiredText = document.querySelector(".required__text");
+  const img = document.createElement("img");
   requiredText.innerHTML = "";
   if (document.querySelector(".required-alert-box>img") !== null) {
     requiredAlertBox.childNodes[3].remove();
